@@ -28,7 +28,7 @@ Pseudocode from class, with some clarifications:
 		F := pure-elim(F)
 		if F contains the empty clause, return the empty clause // call this "unsat" in output
 		if F is a consistent set of unit clauses that involves all VARS, return F
-		x := pick-a-variable(F) // do anything reasonable here
+		x := pick-a-variable(F, VARS) // do anything reasonable here
 		if solve(VARS, F + {x}) isn't the empty clause, return solve(F + {x}) // works to have +x
 		else return solve(VARS, F + {-x}) // check -x
 
