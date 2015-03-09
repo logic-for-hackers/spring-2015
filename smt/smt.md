@@ -54,5 +54,4 @@ The Z3 examples from class can be found on the course webpage:
 http://cs.brown.edu/courses/cs195y/2015/files.html
 
 ### Handin:
-To hand in your the project run __cs195y_handin smt__ from a directory containing 
-your Z3 source file(s). (Make sure that what you submit runs from Z3's web interface.)
+To hand in your the project run __cs195y_handin smt__ from a directory containing a text file with your Z3 code. (Make sure that what you submit runs from Z3's web interface.)
