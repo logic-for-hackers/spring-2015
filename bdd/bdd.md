@@ -216,6 +216,19 @@ example, the input `& | p q & r | p q` produces output of the following form:
 Note that there is a single representation of `r F T` and although the node with
 ID 3 occurs twice as a child, the node with ID 3 is only printed once.
 
+Two special cases of output are for tautologies and contradictions. The input `|
+p !  p`, a tautology, produces the following output:
+
+```
+T
+```
+
+while the input `& p ! p`, a contradiction, produces the following output:
+
+```
+F
+```
+
 Handing In
 ----------
 
