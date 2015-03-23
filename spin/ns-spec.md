@@ -93,8 +93,8 @@ The expected run of the protocol between Alice (A) and Bob (B) is:
   
   After that fails:
   
-    ./pan -t <filename>  does a *guided simulation*, which will include all printfs in the buggy run.
-    ./pan -t -p <filename>  shows you the above, plus every step through all processes
+    spin -t <filename>  does a *guided simulation*, which will include all printfs in the buggy run.
+    spin -t -p <filename>  shows you the above, plus every step through all processes
     
 
 Hint: If you're where to start, try playing with the Alice/Bob processes and doing some simulation runs,
