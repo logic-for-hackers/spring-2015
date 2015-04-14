@@ -738,5 +738,5 @@ for appending lists?
 
 ## Handing In
  To hand in these exercises, run __cs195y_handin idris1__ from a directory
- containing an Alloy file for each of the problems.
+ containing your Idris (.idr) source file(s).
 
