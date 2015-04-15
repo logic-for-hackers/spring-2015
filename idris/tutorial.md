@@ -23,7 +23,7 @@ things - you will never get stuck because of the analysis not being complete.
 
 Okay, let's get started. Idris has a
 [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
-which we can use to play around. You can run it with `idris --toal` on the
+which we can use to play around. You can run it with `idris --total` on the
 command line.
 
 ```idris
