@@ -23,8 +23,8 @@ things - you will never get stuck because of the analysis not being complete.
 
 Okay, let's get started. Idris has a
 [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
-which we can use to play around. You can run it with `idris` on the command
-line.
+which we can use to play around. You can run it with `idris --toal` on the
+command line.
 
 ```idris
 Idris>
@@ -118,9 +118,10 @@ the time as possible.
 
 Now, instead of just toying around with integers, let's make some types of
 our own. At this point it's going to be beneficial to restart Idris with the
-command line option `--noprelude` in order to not automatically import a bunch
-of things with the same names as things we are about to write. Now we'll delete
-our silly `addOne` and start fresh by defining natural numbers.
+command line option `--noprelude` (so `idris --total --noprelude`) in order to
+not automatically import a bunch of things with the same names as things we are
+about to write. Now we'll delete our silly `addOne` and start fresh by defining
+natural numbers.
 
 ```idris
 data N : Type where
@@ -157,7 +158,8 @@ each type of natural number on the left hand side, and accept any number on
 the right side in both cases. This is arbitrary; we could have done it the
 other way around. In general, you can split up cases however you want, as long
 as there is exactly one case that matches each possible combination of input
-values. (We'll worry about this more later.)
+values. (We'll worry about this more later.) This is where the `--total` flag
+will help you, otherwise Idris won't complain if you don't cover all the cases.
 
 Here, we said that zero plus `y` is just `y`, and adding the successor of `x`
 to `y` gives us the successor of `x` plus `y`. Now, let's test our function:
@@ -739,4 +741,3 @@ for appending lists?
 ## Handing In
  To hand in these exercises, run __cs195y_handin idris1__ from a directory
  containing your Idris (.idr) source file(s).
-
