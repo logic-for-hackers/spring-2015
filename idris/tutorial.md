@@ -179,7 +179,9 @@ S (S (S (S (S (S Z))))) : N
 
 The most readable way to show `2 + 3 = 5` and `2 * 3 = 6` ever, right!
 
-**Exercise 2:** Can we write subtraction? What happens if we try? (Answer this in a comment.)
+**Exercise 2:** Can we write subtraction
+(with function signature `sub : N -> N -> N`)? What happens if we try?
+(Answer this in a comment.)
 
 Instead of abstract math number systems, let's make an obviously useful type now:
 
