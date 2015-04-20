@@ -467,7 +467,8 @@ namespace vect
 The first thing to note is that, in order to not clash names with our list
 constructors, we'll have to put all our vector-related code in a namespace.
 The following functions should all be indented and put in this namespace.
-(Alternatively, you can just put this code in a separate file.)
+(Alternatively, you can just put this code in a separate file.
+**NOTE**: Don't forget to include the line `infixr 5 ::`)
 
 Unlike our `List` type before, our `Vector` type has an extra parameter which
 is it's length. So `Vector (S (S Z)) Integer` is the type of list of three
