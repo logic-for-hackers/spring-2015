@@ -183,7 +183,7 @@ The most readable way to show `2 + 3 = 5` and `2 * 3 = 6` ever, right!
 (with function signature `sub : N -> N -> N`)? What happens if we try?
 (Answer this in a comment.)
 
-Instead of abstract math number systems, let's make an obviously useful type now:
+Instead of abstract math number systems, let's make a more immediately useful type now:
 
 ```idris
 data List : Type -> Type where
