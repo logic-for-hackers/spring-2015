@@ -294,7 +294,7 @@ we wrote a type signature like this:
 allNaturalNumbersEqual : (x : N) -> (y : N) -> x = y
 ```
 
-Clearly this is a false proposition (because not all natural numbers are
+This is a false proposition (because not all natural numbers are
 equal). Therefore, no matter how hard we try, we will not be able to write
 this function. But if our type represents a proposition that is actually
 true, then (hopefullly), we should be able to write a function of that
@@ -584,7 +584,7 @@ addZeroS : S (add x Z) = S x
 Metavariables: Main.succCase, Main.zeroCase, Main.addZeroS, Main.addZeroZ
 ```
 
-Clearly, `Refl` is what we want for the zero case. For the sucessor case, we
+`Refl` is what we want for the zero case. For the sucessor case, we
 can see that we have `S` applied to both sides, so we can use `apply`:
 
 ```idris
@@ -602,7 +602,7 @@ x : N
 addZeroS : add x Z = x
 ```
 
-it is pretty clear that we can use a recursive call to complete the proof:
+we can then use a recursive call to complete the proof:
 
 ```idris
 addZ : (x : N) -> add x Z = x
@@ -644,7 +644,7 @@ trans : (a = b) -> (b = c) -> a = c
 sym : (l = r) -> r = l
 ```
 
-`trans` represents the property of transitivity, which we obviously expect
+`trans` represents the property of transitivity, which we expect
 equality to obey. `sym`, which we won't actually need for now, represents
 symmetry. With `trans`, we now can make use of our almost helpful term we
 created:
