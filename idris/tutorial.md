@@ -473,7 +473,7 @@ The following functions should all be indented and put in this namespace.
 **NOTE**: Don't forget to include the line `infixr 5 ::`)
 
 Unlike our `List` type before, our `Vector` type has an extra parameter which
-is it's length. So `Vector (S (S Z)) Integer` is the type of list of three
+is it's length. So `Vector (S (S Z)) Integer` is the type of list of two
 integers. Look at the constructors carefully and convince yourself that they
 do in fact allow you to only produce lists of the right length.
 
