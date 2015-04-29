@@ -1,3 +1,8 @@
+-- This is the finished code from the lecture on insertion sort. It uses
+-- types from the prelude, so don't load with --noprelude. (--total is good
+-- though.)
+
+
 -- First we'll define a type synonym just to avoid typing List Nat a lot:
 L : Type
 L = List Nat
